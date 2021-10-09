@@ -1,19 +1,14 @@
 public class Main {
+    public static String cezar(String str){        //metoda szyfrujaca;
+        char x[] = str.toCharArray();
 
-    public static String Lower(String tekst){
-        for (int i = 0; i<tekst.length();i++){
-
-            if((tekst.charAt(i))>64 && (tekst.charAt(i)<91)) {
-
-            }
-
+        for(int i=0; i != x.length; i++){
+            int n = x[i];
+            n += 5;
+            x[i] = (char)n;
         }
-
-
-
-        }
-
-
+        return new String(x);
+    }
     public static void main(String[] args) {
 
 
