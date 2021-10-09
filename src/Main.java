@@ -1,31 +1,31 @@
 public class Main {
 
-    public static String Upper(String text){
+    public static void Upper(String text){
 
         for(int i=0; i<text.length(); i++){
 
             int litera = (int)text.charAt(i);
-            String text2="";
+            System.out.println(litera);
 
             if((litera>96)&&(litera<122)) {
 
-                text2=String.valueOf(text.charAt(i));
+                text=String.valueOf(((int)text.charAt(i)-32));
+                System.out.println(text);
 
             }
             else
             {
-                text2=String.valueOf(text.charAt(i));
+                text=String.valueOf(text.charAt(i));
+                System.out.println(text);
             }
 
         }
-
-        return text;
 
     }
 
     public static void main(String[] args) {
 
-        System.out.println(Upper("Test"));
+        Upper("test");
 
     }
 
