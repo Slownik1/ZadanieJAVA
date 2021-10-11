@@ -1,8 +1,9 @@
 public class Main {
 
-    public static void Upper(String text){
+    public static String Upper(String text){
 
         int litera=0;
+        String StringInUpperCase="";
         char tmp;
 
         for(int i=0; i<text.length(); i++){
@@ -13,21 +14,23 @@ public class Main {
 
                 litera-=32;
                 tmp = (char)litera;
-                System.out.print(tmp);
+                StringInUpperCase+=Character.toString(tmp);
 
             }
             else{
 
                 tmp = (char)litera;
-                System.out.print(tmp);
+                StringInUpperCase+=Character.toString(tmp);
 
             }
         }
+        return StringInUpperCase;
     }
 
     public static void main(String[] args) {
 
-        Upper("test");
+        System.out.println(Upper("test"));
+
 
     }
 
