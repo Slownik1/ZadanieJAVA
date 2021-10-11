@@ -27,9 +27,38 @@ public class Main {
         return StringInUpperCase;
     }
 
+    public static String Lower(String text){
+
+        int litera=0;
+        String StringInUpperCase="";
+        char tmp;
+
+        for(int i=0; i<text.length(); i++){
+
+            litera=text.charAt(i);
+
+            if((litera>64)&&(litera<89)){
+
+                litera+=32;
+                tmp = (char)litera;
+                StringInUpperCase+=Character.toString(tmp);
+
+            }
+            else{
+
+                tmp = (char)litera;
+                StringInUpperCase+=Character.toString(tmp);
+
+            }
+        }
+        return StringInUpperCase;
+    }
+
     public static void main(String[] args) {
 
         System.out.println(Upper("test"));
+
+        System.out.println(Lower("TEST"));
 
 
     }
