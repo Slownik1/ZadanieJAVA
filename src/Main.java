@@ -2,25 +2,27 @@ public class Main {
 
     public static void Upper(String text){
 
+        int litera=0;
+        char tmp;
+
         for(int i=0; i<text.length(); i++){
 
-            int litera = (int)text.charAt(i);
-            System.out.println(litera);
+            litera=text.charAt(i);
 
-            if((litera>96)&&(litera<122)) {
+            if((litera>96)&&(litera<123)){
 
-                text=String.valueOf(((int)text.charAt(i)-32));
-                System.out.println(text);
+                litera-=32;
+                tmp = (char)litera;
+                System.out.print(tmp);
 
             }
-            else
-            {
-                text=String.valueOf(text.charAt(i));
-                System.out.println(text);
-            }
+            else{
 
+                tmp = (char)litera;
+                System.out.print(tmp);
+
+            }
         }
-
     }
 
     public static void main(String[] args) {
