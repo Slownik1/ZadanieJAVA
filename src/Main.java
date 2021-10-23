@@ -1,25 +1,26 @@
 public class Main {
 
+    //Upper case method
     public static String Upper(String text){
 
-        int litera=0;
+        int letter=0;
         String StringInUpperCase="";
         char tmp;
 
         for(int i=0; i<text.length(); i++){
 
-            litera=text.charAt(i);
+            letter=text.charAt(i);
 
-            if((litera>96)&&(litera<123)){
+            if((letter>96)&&(letter<123)){
 
-                litera-=32;
-                tmp = (char)litera;
+                letter-=32;
+                tmp = (char)letter;
                 StringInUpperCase+=Character.toString(tmp);
 
             }
             else{
 
-                tmp = (char)litera;
+                tmp = (char)letter;
                 StringInUpperCase+=Character.toString(tmp);
 
             }
@@ -27,26 +28,27 @@ public class Main {
         return StringInUpperCase;
     }
 
+    //Upper case method
     public static String Lower(String text){
 
-        int litera=0;
+        int letter=0;
         String StringInUpperCase="";
         char tmp;
 
         for(int i=0; i<text.length(); i++){
 
-            litera=text.charAt(i);
+            letter=text.charAt(i);
 
-            if((litera>64)&&(litera<89)){
+            if((letter>64)&&(letter<89)){
 
-                litera+=32;
-                tmp = (char)litera;
+                letter+=32;
+                tmp = (char)letter;
                 StringInUpperCase+=Character.toString(tmp);
 
             }
             else{
 
-                tmp = (char)litera;
+                tmp = (char)letter;
                 StringInUpperCase+=Character.toString(tmp);
 
             }
@@ -59,6 +61,10 @@ public class Main {
         System.out.println(Upper("test"));
 
         System.out.println(Lower("TEST"));
+
+
+
+
 
 
     }
